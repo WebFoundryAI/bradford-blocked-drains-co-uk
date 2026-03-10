@@ -1,8 +1,8 @@
-# SEO Audit Report: bradford.co.uk
+# SEO Audit Report: bradfordblockeddrains.co.uk
 
 **Date:** 2026-03-09
 **Pages Audited:** 96 HTML pages (dist/ output)
-**Domain:** bradford.co.uk
+**Domain:** bradfordblockeddrains.co.uk
 
 ---
 
@@ -70,7 +70,7 @@ This is 191 characters (over the 160 char limit) and reads as an error.
 
 Every page includes Plumber schema with service URLs like:
 ```
-https://bradford.co.uk/services/blocked-drains
+https://bradfordblockeddrains.co.uk/services/blocked-drains
 ```
 But the site uses trailing slashes everywhere else (`/services/blocked-drains/`). This inconsistency confuses crawlers.
 

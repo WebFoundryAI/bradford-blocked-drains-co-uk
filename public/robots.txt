@@ -1,5 +1,5 @@
 # Bradford - robots.txt
-# https://bradford.co.uk
+# https://bradfordblockeddrains.co.uk
 # Last updated: 2026-03-05
 
 # ==============================================
@@ -44,7 +44,7 @@ Disallow: /status
 Disallow: /_astro/
 
 # Sitemap location
-Sitemap: https://bradford.co.uk/sitemap.xml
+Sitemap: https://bradfordblockeddrains.co.uk/sitemap.xml
 
 # Host preference (canonical non-www HTTPS)
-Host: https://bradford.co.uk
+Host: https://bradfordblockeddrains.co.uk
