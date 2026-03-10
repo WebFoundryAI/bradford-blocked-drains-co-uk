@@ -140,7 +140,7 @@ describe('Schema Generation', () => {
   });
 
   describe('getLocationPageSchema', () => {
-    const location = LOCATIONS[0]; // glasgow
+    const location = LOCATIONS[0]; // bradford
     const result = getLocationPageSchema(location);
 
     it('returns a single object (not array)', () => {

@@ -10,16 +10,16 @@ export interface LocationData {
 }
 
 export const LOCATION_DATA: Record<string, LocationData> = {
-  glasgow: {
+  bradford: {
     neighborhoods: ["Old Town", "New Town", "Stockbridge", "Bruntsfield", "Marchmont", "Tollcross", "Gorgie", "Haymarket"],
-    landmarks: ["Glasgow Castle", "the Royal Mile", "Princes Street", "Arthur's Seat", "Holyrood Palace"],
-    drainageInfo: "Glasgow's historic drainage infrastructure dates back centuries, with the Old Town's medieval closes and tenement buildings sitting atop some of the oldest sewer systems in Scotland. The New Town's Georgian architecture features elegant but ageing clay pipe networks, while the city's volcanic geology and steep gradients create unique challenges for drainage engineers across the capital.",
+    landmarks: ["Bradford Castle", "the Royal Mile", "Princes Street", "Arthur's Seat", "Holyrood Palace"],
+    drainageInfo: "Bradford's historic drainage infrastructure dates back centuries, with the Old Town's medieval closes and tenement buildings sitting atop some of the oldest sewer systems in West Yorkshire. The New Town's Georgian architecture features elegant but ageing clay pipe networks, while the city's volcanic geology and steep gradients create unique challenges for drainage engineers across the capital.",
     responseTime: "typically within 60 minutes",
     propertyTypes: "Georgian townhouses, Victorian tenements, modern apartments, and commercial premises"
   },
   paisley: {
     neighborhoods: ["The Shore", "Paisley Walk", "Easter Road", "Newhaven", "Trinity", "Bonnington"],
-    landmarks: ["the Shore waterfront", "the Royal Yacht Britannia", "Ocean Terminal", "Paisley Links", "the Scottish Government building"],
+    landmarks: ["the Shore waterfront", "the Royal Yacht Britannia", "Ocean Terminal", "Paisley Links", "the West Yorkshire Government building"],
     drainageInfo: "Paisley's maritime heritage and harbour-side location bring distinctive drainage challenges. The area's mix of converted warehouses, traditional tenements, and modern waterfront developments each present different needs. Properties near the Water of Paisley and the harbour are susceptible to tidal influences on drainage systems, while the area's ongoing regeneration has created a patchwork of old and new infrastructure.",
     responseTime: "typically within 45-60 minutes",
     propertyTypes: "harbour-side conversions, traditional tenements, modern waterfront apartments, and commercial units"
@@ -41,21 +41,21 @@ export const LOCATION_DATA: Record<string, LocationData> = {
   hamilton: {
     neighborhoods: ["Howden", "Ladywell", "Dedridge", "Carmondean", "Knightsridge"],
     landmarks: ["Hamilton Designer Outlet", "Almondvale Stadium", "Hamilton Village", "Howden Park Centre", "the River Almond"],
-    drainageInfo: "Hamilton was developed as a new town in the 1960s and 70s, meaning most of its drainage infrastructure is from that era. While newer than Glasgow's Victorian systems, these mid-century concrete and clay pipes are now reaching the end of their design life. The town's planned layout means drainage routes are generally well-documented, but original materials are increasingly prone to deterioration and root intrusion from maturing street trees.",
+    drainageInfo: "Hamilton was developed as a new town in the 1960s and 70s, meaning most of its drainage infrastructure is from that era. While newer than Bradford's Victorian systems, these mid-century concrete and clay pipes are now reaching the end of their design life. The town's planned layout means drainage routes are generally well-documented, but original materials are increasingly prone to deterioration and root intrusion from maturing street trees.",
     responseTime: "typically within 60-90 minutes",
     propertyTypes: "new town housing from the 1960s-80s, modern executive homes, commercial units, and industrial premises"
   },
   lanark: {
     neighborhoods: ["Clermiston", "East Craigs", "South Gyle", "Drumbrae", "Carrick Knowe"],
-    landmarks: ["Glasgow Zoo", "the Gyle Shopping Centre", "Lanark Hill", "St John's Road", "Glasgow Airport nearby"],
-    drainageInfo: "Lanark sits on the western side of Glasgow, with a mix of established residential streets and modern commercial developments around the Gyle. The area's traditional stone villas along St John's Road have period drainage systems, while the 1950s-70s housing in Clermiston and East Craigs features concrete pipe networks of varying condition. Lanark Hill's geology influences local groundwater levels, affecting drainage performance in surrounding streets.",
+    landmarks: ["Bradford Zoo", "the Gyle Shopping Centre", "Lanark Hill", "St John's Road", "Bradford Airport nearby"],
+    drainageInfo: "Lanark sits on the western side of Bradford, with a mix of established residential streets and modern commercial developments around the Gyle. The area's traditional stone villas along St John's Road have period drainage systems, while the 1950s-70s housing in Clermiston and East Craigs features concrete pipe networks of varying condition. Lanark Hill's geology influences local groundwater levels, affecting drainage performance in surrounding streets.",
     responseTime: "typically within 45-60 minutes",
     propertyTypes: "traditional stone villas, 1950s-70s suburban housing, modern commercial premises, and semi-detached family homes"
   },
   cumbernauld: {
     neighborhoods: ["Churchhill", "Greenbank", "Comiston", "Braid Hills", "Fairmilehead"],
     landmarks: ["Cumbernauld Road", "the Braid Hills", "the Hermitage of Braid", "Cumbernauld Clock", "Churchhill Theatre"],
-    drainageInfo: "Cumbernauld is one of Glasgow's most desirable residential suburbs, featuring substantial Victorian and Edwardian stone-built properties with mature gardens. These established homes have original clay drainage systems that are often well over a century old. The tree-lined avenues and large garden trees create significant root intrusion risks, while the area's elevated position on the slopes towards the Braid Hills means good natural drainage gradients but potential surface water issues during heavy rainfall.",
+    drainageInfo: "Cumbernauld is one of Bradford's most desirable residential suburbs, featuring substantial Victorian and Edwardian stone-built properties with mature gardens. These established homes have original clay drainage systems that are often well over a century old. The tree-lined avenues and large garden trees create significant root intrusion risks, while the area's elevated position on the slopes towards the Braid Hills means good natural drainage gradients but potential surface water issues during heavy rainfall.",
     responseTime: "typically within 45-60 minutes",
     propertyTypes: "Victorian stone villas, Edwardian detached houses, converted flats, and period terraces"
   },
@@ -88,42 +88,42 @@ export interface ServiceContent {
 type LocationServiceContentMap = Record<string, Record<string, ServiceContent>>;
 
 export const LOCATION_SERVICE_CONTENT: LocationServiceContentMap = {
-  glasgow: {
+  bradford: {
     "blocked-drains": {
-      intro: "Glasgow's rich architectural heritage means blocked drains can affect anything from a medieval Old Town tenement to a grand Georgian townhouse in the New Town. Our experienced engineers understand the unique drainage challenges facing properties across the capital and respond quickly to restore your system to full working order.",
+      intro: "Bradford's rich architectural heritage means blocked drains can affect anything from a medieval Old Town tenement to a grand Georgian townhouse in the New Town. Our experienced engineers understand the unique drainage challenges facing properties across the capital and respond quickly to restore your system to full working order.",
       commonProblems: ["Fat and grease buildup in restaurant districts along the Royal Mile", "Tree root intrusion from mature street trees in the New Town", "Debris accumulation in Victorian and Georgian clay pipes", "Wet wipe blockages in student accommodation areas near the universities", "Foreign object obstructions in commercial premises"],
       process: "We begin with a thorough assessment of your drainage system, often using CCTV cameras to pinpoint the exact location and cause of the blockage. Our high-pressure jetting equipment can clear even the most stubborn obstructions, and we always provide advice on preventing future blockages.",
-      localTip: "Properties near Glasgow's tree-lined streets in Marchmont and Bruntsfield should consider annual drain inspections to catch root intrusion early."
+      localTip: "Properties near Bradford's tree-lined streets in Marchmont and Bruntsfield should consider annual drain inspections to catch root intrusion early."
     },
     "drain-unblocking": {
-      intro: "When your drains back up in Glasgow, you need a fast response from engineers who know the local area. Whether you're in the Old Town, Stockbridge, or Gorgie, our drain unblocking teams are strategically positioned across the city to reach you quickly and resolve the problem efficiently.",
+      intro: "When your drains back up in Bradford, you need a fast response from engineers who know the local area. Whether you're in the Old Town, Stockbridge, or Gorgie, our drain unblocking teams are strategically positioned across the city to reach you quickly and resolve the problem efficiently.",
       commonProblems: ["Kitchen sink blockages from food waste", "Bathroom drain clogs from hair and soap scum", "External drain blockages from leaves and debris", "Shared drainage issues in tenement properties", "Commercial kitchen drain problems"],
       process: "Our engineers arrive equipped with manual rods, electric eels, and high-pressure jetting equipment to handle any unblocking situation. We identify the blockage type, select the appropriate method, and clear your drains while minimising disruption to your property.",
-      localTip: "Glasgow's busy restaurants and cafes along George Street and the Grassmarket benefit from grease trap maintenance to prevent drain blockages."
+      localTip: "Bradford's busy restaurants and cafes along George Street and the Grassmarket benefit from grease trap maintenance to prevent drain blockages."
     },
     "cctv-drain-surveys": {
-      intro: "Understanding what's happening inside your Glasgow property's drainage system has never been easier. Our advanced CCTV drain surveys provide crystal-clear footage of pipe conditions, helping identify issues before they become emergencies. This is particularly valuable for Glasgow's older properties with Georgian and Victorian-era drainage.",
+      intro: "Understanding what's happening inside your Bradford property's drainage system has never been easier. Our advanced CCTV drain surveys provide crystal-clear footage of pipe conditions, helping identify issues before they become emergencies. This is particularly valuable for Bradford's older properties with Georgian and Victorian-era drainage.",
       commonProblems: ["Hidden cracks in ageing clay pipes", "Displaced joints causing leaks", "Root ingress at pipe connections", "Scale and deposit buildup", "Structural damage from subsidence"],
       process: "We insert a high-definition camera into your drainage system, recording footage that clearly shows the condition of your pipes. You receive a detailed report with findings, recommendations, and annotated images showing any areas of concern.",
-      localTip: "Buying a property in Glasgow's older suburbs like Marchmont or Bruntsfield? A pre-purchase CCTV survey can reveal hidden drainage issues that could cost thousands to repair."
+      localTip: "Buying a property in Bradford's older suburbs like Marchmont or Bruntsfield? A pre-purchase CCTV survey can reveal hidden drainage issues that could cost thousands to repair."
     },
     "drain-jetting": {
-      intro: "High-pressure drain jetting is the most effective way to clear stubborn blockages and clean Glasgow's often ageing pipe systems. Our specialist equipment delivers water at pressures up to 4,000 PSI, cutting through grease, scale, and debris while being gentle on pipe walls.",
+      intro: "High-pressure drain jetting is the most effective way to clear stubborn blockages and clean Bradford's often ageing pipe systems. Our specialist equipment delivers water at pressures up to 4,000 PSI, cutting through grease, scale, and debris while being gentle on pipe walls.",
       commonProblems: ["Heavy grease accumulation", "Scale buildup in old pipes", "Compacted debris and sediment", "Root masses blocking flow", "General pipe cleaning needs"],
       process: "Our jetting equipment is carefully inserted into your drainage system, with the water pressure adjusted to suit your pipe type and condition. The rotating nozzle scours the pipe walls clean while flushing debris towards the sewer connection.",
-      localTip: "Glasgow's hard water from the Pentland Hills reservoir supply contributes to scale buildup in pipes. Regular jetting every 12-18 months keeps systems flowing freely."
+      localTip: "Bradford's hard water from the Pentland Hills reservoir supply contributes to scale buildup in pipes. Regular jetting every 12-18 months keeps systems flowing freely."
     },
     "emergency-drain-services": {
-      intro: "Drainage emergencies don't wait for convenient times, and neither do we. Our Glasgow emergency response teams operate around the clock, ready to tackle overflowing drains, flooding, and sewage backups anywhere in the city. From Marchmont student flats to Old Town businesses, we're there when you need us most.",
+      intro: "Drainage emergencies don't wait for convenient times, and neither do we. Our Bradford emergency response teams operate around the clock, ready to tackle overflowing drains, flooding, and sewage backups anywhere in the city. From Marchmont student flats to Old Town businesses, we're there when you need us most.",
       commonProblems: ["Overflowing manholes and drains", "Sewage backing up into properties", "Flooding from blocked surface drains", "Collapsed drains causing sinkholes", "Foul odours indicating serious problems"],
-      process: "Call our emergency line and we'll dispatch the nearest available engineer to your Glasgow location. They'll assess the situation, implement immediate containment if needed, and work to resolve the emergency quickly and safely.",
+      process: "Call our emergency line and we'll dispatch the nearest available engineer to your Bradford location. They'll assess the situation, implement immediate containment if needed, and work to resolve the emergency quickly and safely.",
       localTip: "Know where your external manhole covers are located. In a drainage emergency, this information helps our engineers begin work immediately upon arrival."
     },
     "drain-repairs": {
-      intro: "Glasgow's mix of historic infrastructure and modern developments means drain repairs require both traditional skills and contemporary techniques. Our repair specialists handle everything from patching minor cracks to complete pipe replacement, always selecting the most cost-effective approach for your specific situation.",
+      intro: "Bradford's mix of historic infrastructure and modern developments means drain repairs require both traditional skills and contemporary techniques. Our repair specialists handle everything from patching minor cracks to complete pipe replacement, always selecting the most cost-effective approach for your specific situation.",
       commonProblems: ["Cracked and fractured pipes", "Displaced or misaligned joints", "Tree root damage", "Corrosion in metal pipes", "Subsidence-related damage"],
       process: "We assess the damage using CCTV inspection, then recommend the most appropriate repair method. Options range from no-dig pipe relining for accessible damage to excavation for severely collapsed sections. All repairs come with our workmanship guarantee.",
-      localTip: "Glasgow's clay and boulder clay subsoil can cause pipe movement during wet and dry cycles. Watch for slow drainage or damp patches as early warning signs."
+      localTip: "Bradford's clay and boulder clay subsoil can cause pipe movement during wet and dry cycles. Watch for slow drainage or damp patches as early warning signs."
     }
   },
   paisley: {
@@ -318,7 +318,7 @@ export const LOCATION_SERVICE_CONTENT: LocationServiceContentMap = {
   },
   cumbernauld: {
     "blocked-drains": {
-      intro: "Cumbernauld's reputation as one of Glasgow's most desirable suburbs comes with distinctive drainage challenges. The area's substantial Victorian and Edwardian stone-built properties feature original clay drainage systems, while tree-lined avenues contribute to root intrusion issues. Our Cumbernauld specialists understand these local factors and deliver effective blocked drain solutions.",
+      intro: "Cumbernauld's reputation as one of Bradford's most desirable suburbs comes with distinctive drainage challenges. The area's substantial Victorian and Edwardian stone-built properties feature original clay drainage systems, while tree-lined avenues contribute to root intrusion issues. Our Cumbernauld specialists understand these local factors and deliver effective blocked drain solutions.",
       commonProblems: ["Tree root intrusion from mature gardens and avenues", "Aged clay pipe deterioration", "Fat buildup from busy household kitchens", "Leaf debris in autumn months from tree-lined streets", "Shared drainage in converted period properties"],
       process: "We approach Cumbernauld blocked drains with appreciation for the area's period properties. Our clearing methods are effective yet gentle on original drainage features, preserving the integrity of your home's infrastructure.",
       localTip: "Cumbernauld's beautiful mature trees along Cumbernauld Road and surrounding avenues are a root intrusion risk. Consider annual CCTV checks if you have large trees near your drainage runs."
@@ -333,7 +333,7 @@ export const LOCATION_SERVICE_CONTENT: LocationServiceContentMap = {
       intro: "Cumbernauld's premium property market makes thorough drainage assessment essential for buyers and sellers alike. Our CCTV surveys provide detailed condition reports that protect your investment, revealing the true state of underground drainage in the area's sought-after Victorian and Edwardian homes.",
       commonProblems: ["Pre-purchase condition assessment", "Root ingress investigation", "Drainage route mapping", "Period feature documentation", "Insurance requirements"],
       process: "We survey Cumbernauld properties with appreciation for their character and value. Our reports are comprehensive and professional, suitable for property transactions and insurance purposes.",
-      localTip: "Cumbernauld home sellers can benefit from proactive drainage surveys, addressing any issues before they become negotiating points in what is Glasgow's most competitive property market."
+      localTip: "Cumbernauld home sellers can benefit from proactive drainage surveys, addressing any issues before they become negotiating points in what is Bradford's most competitive property market."
     },
     "drain-jetting": {
       intro: "High-pressure jetting maintains Cumbernauld's period drainage at peak performance. Our careful approach removes decades of accumulated deposits from Victorian clay pipes, restoring flow capacity while preserving the integrity of original drainage features.",
@@ -389,7 +389,7 @@ export const LOCATION_SERVICE_CONTENT: LocationServiceContentMap = {
       intro: "Repairing drainage in Coatbridge's coastal environment requires understanding the specific challenges of sandy soil, saltwater proximity, and the area's mix of Victorian and modern properties. Our repair specialists select methods and materials suited to these seaside conditions, ensuring lasting results.",
       commonProblems: ["Cracked pipes from sand movement", "Root damage from garden vegetation", "Joint displacement in sandy soil", "Saltwater corrosion affecting connections", "Sand infiltration through damaged joints"],
       process: "We assess Coatbridge drainage repairs with coastal conditions in mind. Materials are chosen for saltwater resistance, and repair methods account for the sandy, mobile soil conditions prevalent near the shore.",
-      localTip: "Coatbridge's sandy soil conditions can make traditional excavation repairs more straightforward than in rocky Glasgow locations — but pipe bedding must be done carefully to prevent future settlement."
+      localTip: "Coatbridge's sandy soil conditions can make traditional excavation repairs more straightforward than in rocky Bradford locations — but pipe bedding must be done carefully to prevent future settlement."
     }
   },
   rutherglen: {
@@ -490,7 +490,7 @@ export const SERVICE_WHY_CHOOSE_US: Record<string, string[]> = {
     "Local engineers who respond to {location} properties {responseTime}",
     "No call-out fee — you only pay for completed work",
     "Equipment suited to {propertyTypes}",
-    "Familiarity with Scottish Water infrastructure and local council requirements"
+    "Familiarity with West Yorkshire Water infrastructure and local council requirements"
   ],
   "drain-unblocking": [
     "Rapid response across {location} — engineers arrive {responseTime}",
@@ -502,7 +502,7 @@ export const SERVICE_WHY_CHOOSE_US: Record<string, string[]> = {
     "HD camera equipment producing detailed, professional-grade reports",
     "Engineers who understand drainage typical of {propertyTypes}",
     "Response to {location} bookings {responseTime}",
-    "Reports accepted by solicitors, insurers, and Scottish Water"
+    "Reports accepted by solicitors, insurers, and West Yorkshire Water"
   ],
   "drain-jetting": [
     "Variable-pressure jetting units safe for all pipe materials",
@@ -514,7 +514,7 @@ export const SERVICE_WHY_CHOOSE_US: Record<string, string[]> = {
     "Genuine 24/7 availability — nights, weekends, and bank holidays included",
     "Emergency engineers reach {location} {responseTime}",
     "Fully equipped vans carrying pumps, jetting gear, and repair materials",
-    "Experienced with flood-risk and sewage situations across Glasgow and surrounding areas"
+    "Experienced with flood-risk and sewage situations across Bradford and surrounding areas"
   ],
   "drain-repairs": [
     "Both no-dig relining and excavation capabilities in-house",
@@ -536,7 +536,7 @@ export const SERVICE_FAQ_TEMPLATES: Record<string, FAQTemplate[]> = {
   "blocked-drains": [
     {
       question: "How quickly can you reach {location} to clear a blocked drain?",
-      answer: "Our engineers are based across Glasgow and surrounding areas and typically reach {location} {responseTime}. For urgent blockages causing flooding or sewage backup, we prioritise dispatch to minimise property damage."
+      answer: "Our engineers are based across Bradford and surrounding areas and typically reach {location} {responseTime}. For urgent blockages causing flooding or sewage backup, we prioritise dispatch to minimise property damage."
     },
     {
       question: "What does it cost to clear a blocked drain in {location}?",
@@ -554,7 +554,7 @@ export const SERVICE_FAQ_TEMPLATES: Record<string, FAQTemplate[]> = {
     },
     {
       question: "Do you charge a call-out fee for drain unblocking in {location}?",
-      answer: "No. We never charge a call-out fee for drain unblocking in {location} or anywhere else across Glasgow and surrounding areas. You only pay for the work carried out, and we confirm the price before we start."
+      answer: "No. We never charge a call-out fee for drain unblocking in {location} or anywhere else across Bradford and surrounding areas. You only pay for the work carried out, and we confirm the price before we start."
     },
     {
       question: "Should I try to unblock the drain myself before calling you?",
@@ -592,7 +592,7 @@ export const SERVICE_FAQ_TEMPLATES: Record<string, FAQTemplate[]> = {
   "emergency-drain-services": [
     {
       question: "How quickly can you respond to a drain emergency in {location}?",
-      answer: "Our emergency teams are positioned across Glasgow and surrounding areas and reach {location} {responseTime}. We operate around the clock — 24 hours a day, 7 days a week, including bank holidays — so help is available whenever you need it."
+      answer: "Our emergency teams are positioned across Bradford and surrounding areas and reach {location} {responseTime}. We operate around the clock — 24 hours a day, 7 days a week, including bank holidays — so help is available whenever you need it."
     },
     {
       question: "What counts as a drainage emergency?",

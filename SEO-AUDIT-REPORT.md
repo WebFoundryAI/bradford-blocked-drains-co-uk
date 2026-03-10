@@ -1,8 +1,8 @@
-# SEO Audit Report: glasgowdrainunblocker.co.uk
+# SEO Audit Report: bradford.co.uk
 
 **Date:** 2026-03-09
 **Pages Audited:** 96 HTML pages (dist/ output)
-**Domain:** glasgowdrainunblocker.co.uk
+**Domain:** bradford.co.uk
 
 ---
 
@@ -30,25 +30,25 @@
 
 ## CRITICAL Issues
 
-### C1. Duplicate Title Tags — Service vs Glasgow Location Pages (6 pairs)
+### C1. Duplicate Title Tags — Service vs Bradford Location Pages (6 pairs)
 
-Six service pages and their corresponding Glasgow location pages share **identical title tags**, causing keyword cannibalization.
+Six service pages and their corresponding Bradford location pages share **identical title tags**, causing keyword cannibalization.
 
-| Service Page | Glasgow Location Page | Shared Title |
+| Service Page | Bradford Location Page | Shared Title |
 |---|---|---|
-| `/services/blocked-drains/` | `/locations/glasgow/blocked-drains/` | Blocked Drains in Glasgow \| No Call-Out Fee \| 24/7 |
-| `/services/drain-unblocking/` | `/locations/glasgow/drain-unblocking/` | Drain Unblocking in Glasgow \| No Call-Out Fee \| 24/7 |
-| `/services/cctv-drain-surveys/` | `/locations/glasgow/cctv-drain-surveys/` | CCTV Drain Surveys in Glasgow \| No Call-Out Fee \| 24/7 |
-| `/services/drain-jetting/` | `/locations/glasgow/drain-jetting/` | Drain Jetting in Glasgow \| No Call-Out Fee \| 24/7 |
-| `/services/emergency-drain-services/` | `/locations/glasgow/emergency-drain-services/` | Emergency Drain Services in Glasgow \| No Call-Out Fee \| 24/7 |
-| `/services/drain-repairs/` | `/locations/glasgow/drain-repairs/` | Drain Repairs in Glasgow \| No Call-Out Fee \| 24/7 |
+| `/services/blocked-drains/` | `/locations/bradford/blocked-drains/` | Blocked Drains in Bradford \| No Call-Out Fee \| 24/7 |
+| `/services/drain-unblocking/` | `/locations/bradford/drain-unblocking/` | Drain Unblocking in Bradford \| No Call-Out Fee \| 24/7 |
+| `/services/cctv-drain-surveys/` | `/locations/bradford/cctv-drain-surveys/` | CCTV Drain Surveys in Bradford \| No Call-Out Fee \| 24/7 |
+| `/services/drain-jetting/` | `/locations/bradford/drain-jetting/` | Drain Jetting in Bradford \| No Call-Out Fee \| 24/7 |
+| `/services/emergency-drain-services/` | `/locations/bradford/emergency-drain-services/` | Emergency Drain Services in Bradford \| No Call-Out Fee \| 24/7 |
+| `/services/drain-repairs/` | `/locations/bradford/drain-repairs/` | Drain Repairs in Bradford \| No Call-Out Fee \| 24/7 |
 
 **Fix:** Differentiate the location-service page titles from the main service page titles. For example:
-- Service page: `Blocked Drains in Glasgow | No Call-Out Fee | 24/7`
-- Location page: `Blocked Drains Glasgow | Local Engineers Near You`
+- Service page: `Blocked Drains in Bradford | No Call-Out Fee | 24/7`
+- Location page: `Blocked Drains Bradford | Local Engineers Near You`
 
 **Files to change:**
-- `src/pages/locations/[location]/[service].astro` — update the title template for Glasgow location-service pages
+- `src/pages/locations/[location]/[service].astro` — update the title template for Bradford location-service pages
 - OR `src/pages/services/[slug].astro` — update the service page title template
 
 ---
@@ -70,7 +70,7 @@ This is 191 characters (over the 160 char limit) and reads as an error.
 
 Every page includes Plumber schema with service URLs like:
 ```
-https://glasgowdrainunblocker.co.uk/services/blocked-drains
+https://bradford.co.uk/services/blocked-drains
 ```
 But the site uses trailing slashes everywhere else (`/services/blocked-drains/`). This inconsistency confuses crawlers.
 
@@ -104,8 +104,8 @@ These descriptions will be truncated in Google search results:
 | `/sitemap/` | 161 chars |
 
 **Fix:** Trim all meta descriptions to 150-155 characters while keeping the phone number CTA. Shorten the pattern:
-- Before: `"Professional drain unblocking service... No call-out charges, fixed pricing. Call 0141 221 5164 for fast drainage solutions in Glasgow and surrounding areas."`
-- After: `"Professional drain unblocking in Glasgow. No call-out fee, fixed pricing. Call 0141 221 5164 for same-day service."`
+- Before: `"Professional drain unblocking service... No call-out charges, fixed pricing. Call 0141 221 5164 for fast drainage solutions in Bradford and surrounding areas."`
+- After: `"Professional drain unblocking in Bradford. No call-out fee, fixed pricing. Call 0141 221 5164 for same-day service."`
 
 **Files to change:** `src/pages/services/[slug].astro`, `src/pages/services/[service]/[subservice].astro` — meta description templates
 
@@ -115,18 +115,18 @@ These descriptions will be truncated in Google search results:
 
 | Page | Title | Length |
 |---|---|---|
-| `/services/blocked-drains/blocked-bath/` | Blocked Bath in Glasgow \| Same-Day \| No Call-Out Fee | 65 |
-| `/services/cctv-drain-surveys/drainage-investigation/` | Drainage Investigation in Glasgow \| Same-Day \| No Call-Out Fee | 62 |
-| `/services/cctv-drain-surveys/pre-purchase-survey/` | Pre-Purchase Survey in Glasgow \| Same-Day \| No Call-Out Fee | 65 |
-| `/services/drain-jetting/commercial-jetting/` | Commercial Jetting in Glasgow \| Same-Day \| No Call-Out Fee | 64 |
-| `/services/drain-jetting/domestic-jetting/` | Domestic Jetting in Glasgow \| Same-Day \| No Call-Out Fee | 62 |
-| `/services/drain-unblocking/external-drain-unblocking/` | External Drain Unblocking in Glasgow \| Same-Day \| No Call-Out Fee | 65 |
-| `/services/drain-unblocking/internal-drain-unblocking/` | Internal Drain Unblocking in Glasgow \| Same-Day \| No Call-Out Fee | 65 |
-| `/services/emergency-drain-services/` | Emergency Drain Services in Glasgow \| No Call-Out Fee \| 24/7 | 60 |
+| `/services/blocked-drains/blocked-bath/` | Blocked Bath in Bradford \| Same-Day \| No Call-Out Fee | 65 |
+| `/services/cctv-drain-surveys/drainage-investigation/` | Drainage Investigation in Bradford \| Same-Day \| No Call-Out Fee | 62 |
+| `/services/cctv-drain-surveys/pre-purchase-survey/` | Pre-Purchase Survey in Bradford \| Same-Day \| No Call-Out Fee | 65 |
+| `/services/drain-jetting/commercial-jetting/` | Commercial Jetting in Bradford \| Same-Day \| No Call-Out Fee | 64 |
+| `/services/drain-jetting/domestic-jetting/` | Domestic Jetting in Bradford \| Same-Day \| No Call-Out Fee | 62 |
+| `/services/drain-unblocking/external-drain-unblocking/` | External Drain Unblocking in Bradford \| Same-Day \| No Call-Out Fee | 65 |
+| `/services/drain-unblocking/internal-drain-unblocking/` | Internal Drain Unblocking in Bradford \| Same-Day \| No Call-Out Fee | 65 |
+| `/services/emergency-drain-services/` | Emergency Drain Services in Bradford \| No Call-Out Fee \| 24/7 | 60 |
 
 **Fix:** Shorten the sub-service title template. Options:
-- Drop "Same-Day": `Blocked Bath in Glasgow | No Call-Out Fee`
-- Abbreviate: `Blocked Bath Glasgow | Same-Day | No Callout`
+- Drop "Same-Day": `Blocked Bath in Bradford | No Call-Out Fee`
+- Abbreviate: `Blocked Bath Bradford | Same-Day | No Callout`
 
 **File to change:** `src/pages/services/[service]/[subservice].astro` — title template
 
@@ -185,7 +185,7 @@ For competitive drain/plumbing keywords, aim for 1,200-1,500 words.
 
 ### M3. HTML Entity in About Page Title
 
-The about page title renders as: `About Us | Glasgow&#39;s Trusted Drainage Specialists`
+The about page title renders as: `About Us | Bradford&#39;s Trusted Drainage Specialists`
 
 The `&#39;` should be a proper apostrophe character in the source.
 
@@ -232,7 +232,7 @@ Adding `<link rel="alternate" hreflang="en-gb" href="...">` is a best practice f
 
 ### L2. Blog Index Page Is Thin (406 words)
 
-Add an introductory paragraph with relevant keywords about Glasgow drainage advice.
+Add an introductory paragraph with relevant keywords about Bradford drainage advice.
 
 **File:** `src/pages/blog/index.astro`
 
@@ -279,7 +279,7 @@ Acceptable for an error page. No action required unless desired.
 4. **M3** — Fix HTML entity in about page title
 
 ### Phase 2 — Title & Description Optimization (1 hr)
-5. **C1** — Differentiate duplicate title tags (service vs Glasgow location pages)
+5. **C1** — Differentiate duplicate title tags (service vs Bradford location pages)
 6. **H1** — Trim all meta descriptions to under 160 chars
 7. **H2** — Shorten sub-service title tags to under 60 chars
 8. **M4** — Add CTAs to blog index and sitemap descriptions

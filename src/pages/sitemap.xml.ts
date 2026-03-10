@@ -81,20 +81,20 @@ function generateSitemapUrls(): SitemapUrl[] {
 
   // Location pages (only indexed locations)
   for (const [i, location] of INDEXED_LOCATIONS.entries()) {
-    // Main location page (Glasgow gets higher priority)
-    const isGlasgow = location.slug === 'glasgow';
+    // Main location page (Bradford gets higher priority)
+    const isBradford = location.slug === 'bradford';
     urls.push({
       loc: `/locations/${location.slug}/`,
-      priority: isGlasgow ? 0.9 : 0.8,
+      priority: isBradford ? 0.9 : 0.8,
       changefreq: 'weekly',
-      lastmod: getStaggeredDate(isGlasgow ? 1 : 2 + i),
+      lastmod: getStaggeredDate(isBradford ? 1 : 2 + i),
     });
 
     // Location + Service combinations
     for (const [j, service] of SERVICES.entries()) {
       urls.push({
         loc: `/locations/${location.slug}/${service.slug}/`,
-        priority: isGlasgow ? 0.8 : 0.7,
+        priority: isBradford ? 0.8 : 0.7,
         changefreq: 'monthly',
         lastmod: getStaggeredDate(3 + i + j * 2),
       });

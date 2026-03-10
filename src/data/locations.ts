@@ -8,9 +8,9 @@ export interface Location {
 }
 
 export const PRIMARY_LOCATION: Location = {
-  slug: "glasgow",
-  name: "Glasgow",
-  countyOrRegion: "City of Glasgow",
+  slug: "bradford",
+  name: "Bradford",
+  countyOrRegion: "City of Bradford",
   latitude: 55.8642,
   longitude: -4.2518,
 };

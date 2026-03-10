@@ -23,14 +23,14 @@ describe('Locations Data', () => {
       }
     });
 
-    it('every location has latitude within Glasgow & Central Scotland bounds', () => {
+    it('every location has latitude within Bradford & Central West Yorkshire bounds', () => {
       for (const loc of LOCATIONS) {
         expect(loc.latitude).toBeGreaterThan(55.6);
         expect(loc.latitude).toBeLessThan(56.1);
       }
     });
 
-    it('every location has longitude within Glasgow & Central Scotland bounds', () => {
+    it('every location has longitude within Bradford & Central West Yorkshire bounds', () => {
       for (const loc of LOCATIONS) {
         expect(loc.longitude).toBeGreaterThan(-4.5);
         expect(loc.longitude).toBeLessThan(-3.7);
@@ -45,8 +45,8 @@ describe('Locations Data', () => {
   });
 
   describe('PRIMARY_LOCATION', () => {
-    it('is "glasgow"', () => {
-      expect(PRIMARY_LOCATION.slug).toBe('glasgow');
+    it('is "bradford"', () => {
+      expect(PRIMARY_LOCATION.slug).toBe('bradford');
     });
 
     it('is first in LOCATIONS array', () => {
@@ -67,7 +67,7 @@ describe('Locations Data', () => {
 
     it('includes all location slugs', () => {
       const slugs = INDEXED_LOCATIONS.map((l) => l.slug);
-      expect(slugs).toContain('glasgow');
+      expect(slugs).toContain('bradford');
       expect(slugs).toContain('east-kilbride');
       expect(slugs).toContain('paisley');
       expect(slugs).toContain('motherwell');
@@ -80,10 +80,10 @@ describe('Locations Data', () => {
   });
 
   describe('getLocationBySlug', () => {
-    it('returns correct location for "glasgow"', () => {
-      const loc = getLocationBySlug('glasgow');
+    it('returns correct location for "bradford"', () => {
+      const loc = getLocationBySlug('bradford');
       expect(loc).toBeDefined();
-      expect(loc!.name).toBe('Glasgow');
+      expect(loc!.name).toBe('Bradford');
     });
 
     it('returns correct location for "east-kilbride"', () => {

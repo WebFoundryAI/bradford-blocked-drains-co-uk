@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://glasgowdrainunblocker.co.uk',
+  site: 'https://bradford.co.uk',
   integrations: [
     tailwind(),
   ],
