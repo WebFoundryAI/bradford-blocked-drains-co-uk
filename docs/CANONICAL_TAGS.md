@@ -1,6 +1,6 @@
 # Canonical Tag Implementation
 
-This document confirms the canonical tag strategy for edinburghdrainunblocker.co.uk.
+This document confirms the canonical tag strategy for bradfordblockeddrains.co.uk.
 
 ## ✅ Status: Fully Implemented
 
@@ -12,17 +12,17 @@ All pages have self-referencing canonical tags via the `RouteSEOHead` component.
 
 | Page Type | Canonical Format | Example |
 |-----------|------------------|---------|
-| Homepage | `https://edinburghdrainunblocker.co.uk/` | With trailing slash |
-| All other pages | `https://edinburghdrainunblocker.co.uk/path` | No trailing slash |
+| Homepage | `https://bradfordblockeddrains.co.uk/` | With trailing slash |
+| All other pages | `https://bradfordblockeddrains.co.uk/path` | No trailing slash |
 
 ### Examples
 
 ```
-Homepage:        https://edinburghdrainunblocker.co.uk/
-Services:        https://edinburghdrainunblocker.co.uk/services
-Service detail:  https://edinburghdrainunblocker.co.uk/services/blocked-drains
-Location:        https://edinburghdrainunblocker.co.uk/locations/salford
-Location+Service: https://edinburghdrainunblocker.co.uk/locations/salford/blocked-drains
+Homepage:        https://bradfordblockeddrains.co.uk/
+Services:        https://bradfordblockeddrains.co.uk/services
+Service detail:  https://bradfordblockeddrains.co.uk/services/blocked-drains
+Location:        https://bradfordblockeddrains.co.uk/locations/shipley
+Location+Service: https://bradfordblockeddrains.co.uk/locations/shipley/blocked-drains
 ```
 
 ---
@@ -109,7 +109,7 @@ Every page's canonical URL points to itself (self-referencing). There are no cro
 |-------------|---------------|
 | `/services/blocked-drains` | `/services/blocked-drains` |
 | `/services/blocked-drains/` | `/services/blocked-drains` (trailing slash stripped) |
-| `/locations/salford` | `/locations/salford` |
+| `/locations/shipley` | `/locations/shipley` |
 
 ---
 
@@ -119,13 +119,13 @@ Every page's canonical URL points to itself (self-referencing). There are no cro
 ```javascript
 // In browser console on any page:
 document.querySelector('link[rel="canonical"]').href
-// Should return: https://edinburghdrainunblocker.co.uk/current-path
+// Should return: https://bradfordblockeddrains.co.uk/current-path
 ```
 
 ### 2. View Source
 Check the `<head>` section for exactly ONE canonical tag:
 ```html
-<link rel="canonical" href="https://edinburghdrainunblocker.co.uk/services/blocked-drains">
+<link rel="canonical" href="https://bradfordblockeddrains.co.uk/services/blocked-drains">
 ```
 
 ### 3. Google Search Console
@@ -136,9 +136,9 @@ Check the `<head>` section for exactly ONE canonical tag:
 ### 4. Bulk Verification Script
 ```bash
 # Check multiple pages
-for url in "/" "/services" "/services/blocked-drains" "/locations" "/locations/salford"; do
+for url in "/" "/services" "/services/blocked-drains" "/locations" "/locations/shipley"; do
   echo "Checking: $url"
-  curl -s "https://edinburghdrainunblocker.co.uk$url" | grep -o '<link rel="canonical"[^>]*>'
+  curl -s "https://bradfordblockeddrains.co.uk$url" | grep -o '<link rel="canonical"[^>]*>'
 done
 ```
 
@@ -148,7 +148,7 @@ done
 
 ### Location Pages
 Each location has its own canonical URL:
-- `/locations/salford` → canonical: `/locations/salford`
+- `/locations/shipley` → canonical: `/locations/shipley`
 - `/locations/bolton` → canonical: `/locations/bolton`
 
 ### Similar Service Pages
@@ -158,7 +158,7 @@ Each service variant has its own canonical:
 
 ### Location + Service Combinations
 Unique canonicals for each combination:
-- `/locations/salford/blocked-drains` → canonical: `/locations/salford/blocked-drains`
+- `/locations/shipley/blocked-drains` → canonical: `/locations/shipley/blocked-drains`
 - `/locations/bolton/blocked-drains` → canonical: `/locations/bolton/blocked-drains`
 
 ---
@@ -201,6 +201,6 @@ This should not happen with `react-helmet-async` which deduplicates tags. If it 
 - ✅ Self-referencing canonicals (page points to itself)
 - ✅ No trailing slashes (except homepage)
 - ✅ HTTPS only
-- ✅ Consistent domain (edinburghdrainunblocker.co.uk, no www)
+- ✅ Consistent domain (bradfordblockeddrains.co.uk, no www)
 - ✅ URL normalizer strips trailing slashes at runtime
 - ✅ Deprecated `Seo.tsx` component removed

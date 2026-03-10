@@ -23,17 +23,17 @@ describe('Locations Data', () => {
       }
     });
 
-    it('every location has latitude within Bradford & Central West Yorkshire bounds', () => {
+    it('every location has latitude within Bradford & West Yorkshire bounds', () => {
       for (const loc of LOCATIONS) {
-        expect(loc.latitude).toBeGreaterThan(55.6);
-        expect(loc.latitude).toBeLessThan(56.1);
+        expect(loc.latitude).toBeGreaterThan(53.7);
+        expect(loc.latitude).toBeLessThan(54.0);
       }
     });
 
-    it('every location has longitude within Bradford & Central West Yorkshire bounds', () => {
+    it('every location has longitude within Bradford & West Yorkshire bounds', () => {
       for (const loc of LOCATIONS) {
-        expect(loc.longitude).toBeGreaterThan(-4.5);
-        expect(loc.longitude).toBeLessThan(-3.7);
+        expect(loc.longitude).toBeGreaterThan(-2.0);
+        expect(loc.longitude).toBeLessThan(-1.6);
       }
     });
 
@@ -68,14 +68,14 @@ describe('Locations Data', () => {
     it('includes all location slugs', () => {
       const slugs = INDEXED_LOCATIONS.map((l) => l.slug);
       expect(slugs).toContain('bradford');
-      expect(slugs).toContain('east-kilbride');
-      expect(slugs).toContain('paisley');
-      expect(slugs).toContain('motherwell');
-      expect(slugs).toContain('hamilton');
-      expect(slugs).toContain('lanark');
-      expect(slugs).toContain('cumbernauld');
-      expect(slugs).toContain('coatbridge');
-      expect(slugs).toContain('rutherglen');
+      expect(slugs).toContain('shipley');
+      expect(slugs).toContain('keighley');
+      expect(slugs).toContain('bingley');
+      expect(slugs).toContain('ilkley');
+      expect(slugs).toContain('saltaire');
+      expect(slugs).toContain('idle');
+      expect(slugs).toContain('thornton');
+      expect(slugs).toContain('queensbury');
     });
   });
 
@@ -87,7 +87,7 @@ describe('Locations Data', () => {
     });
 
     it('returns correct location for "shipley"', () => {
-      const loc = getLocationBySlug('east-kilbride');
+      const loc = getLocationBySlug('shipley');
       expect(loc).toBeDefined();
       expect(loc!.name).toBe('Shipley');
     });

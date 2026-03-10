@@ -52,7 +52,7 @@ Implement the remaining infrastructure improvements:
    - Breadcrumbs on all pages linking back to parents
    - Related content sections where appropriate
 
-Reference implementation: /home/user/edinburgh_blocked_drain_co_uk
+Reference implementation: /home/user/bradford_blocked_drain_co_uk
 Key files to reference:
 - /netlify.toml or /vercel.json (headers configuration)
 - /src/styles/global.css (CSS variables, mobile bar styles)
@@ -74,4 +74,4 @@ After implementation, check:
 
 ## Complete
 
-Site should now match the Edinburgh Drain Unblocker reference implementation quality.
+Site should now match the Bradford Drain Unblocker reference implementation quality.

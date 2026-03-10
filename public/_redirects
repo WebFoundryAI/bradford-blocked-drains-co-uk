@@ -1,9 +1,9 @@
 # Redirects for Cloudflare Pages/Workers
 
 # www to non-www redirect (301 permanent)
-https://www.glasgowdrainunblocker.co.uk/* https://glasgowdrainunblocker.co.uk/:splat 301
-http://www.glasgowdrainunblocker.co.uk/* https://glasgowdrainunblocker.co.uk/:splat 301
-http://glasgowdrainunblocker.co.uk/* https://glasgowdrainunblocker.co.uk/:splat 301
+https://www.bradfordblockeddrains.co.uk/* https://bradfordblockeddrains.co.uk/:splat 301
+http://www.bradfordblockeddrains.co.uk/* https://bradfordblockeddrains.co.uk/:splat 301
+http://bradfordblockeddrains.co.uk/* https://bradfordblockeddrains.co.uk/:splat 301
 
 # Old FAQ URL redirect (301 permanent)
 /frequently-asked-questions/ /faq/ 301
