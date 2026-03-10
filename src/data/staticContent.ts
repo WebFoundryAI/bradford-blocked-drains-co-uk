@@ -10,7 +10,7 @@ Our engineers are fully trained and hold industry-recognised qualifications. Eve
 
 We use modern equipment on every job. Our CCTV survey cameras produce high-definition footage that clearly shows the condition of your pipes. Our jetting machines deliver water at pressures up to 4,000 PSI to cut through the toughest blockages. For repairs, we offer trenchless pipe relining, which fixes damaged pipes without digging up your garden or driveway.
 
-We cover Bradford and the areas around it. This includes East Kilbride, Paisley, Motherwell, Hamilton, Lanark, Cumbernauld, Coatbridge, and Rutherglen. We know the local area well, so we can reach you quickly and understand the drainage issues common to your neighbourhood. Many Bradford properties have older clay or cast iron drainage systems that need specialist knowledge to maintain and repair.
+We cover Bradford and the areas around it. This includes Shipley, Keighley, Bingley, Ilkley, Saltaire, Idle, Thornton, and Queensbury. We know the local area well, so we can reach you quickly and understand the drainage issues common to your neighbourhood. Many Bradford properties have older clay or cast iron drainage systems that need specialist knowledge to maintain and repair.
 
 We work with homeowners, landlords, letting agents, estate agents, and commercial property managers. Our services suit domestic and commercial properties of all sizes. We regularly carry out pre-purchase drain surveys for home buyers, planned maintenance for property managers, and emergency repairs for businesses that cannot afford downtime.
 
@@ -27,26 +27,26 @@ export const HOME_INTRO = `Need a drainage team you can trust in Bradford? We pr
 export const LOCATION_CONTENT: Record<string, string> = {
   bradford: `Need a reliable drainage specialist in Bradford? Bradford provides fast, professional drainage services to homes and businesses throughout Bradford and the surrounding area. From the city centre to the surrounding residential areas including the West End, Southside, East End, and North Bradford, we provide comprehensive drainage solutions for properties of all sizes.`,
 
-  paisley: `Paisley, the largest town in Renfrewshire, is known for its rich textile heritage and impressive Victorian architecture. From the historic town centre to the surrounding residential areas, we provide drainage services tailored to all property types across Paisley.`,
+  paisley: `Keighley, the largest town in West Yorkshire, is known for its rich textile heritage and impressive Victorian architecture. From the historic town centre to the surrounding residential areas, we provide drainage services tailored to all property types across Keighley.`,
 
-  "east-kilbride": `East Kilbride, one of West Yorkshire's largest towns, is a thriving community south of Bradford known for its modern housing estates and commercial developments. Need drainage help in East Kilbride? Bradford provides fast, reliable solutions to keep your drainage system in optimal condition.`,
+  "shipley": `Shipley, one of West Yorkshire's largest towns, is a thriving community south of Bradford known for its modern housing estates and commercial developments. Need drainage help in Shipley? Bradford provides fast, reliable solutions to keep your drainage system in optimal condition.`,
 
-  motherwell: `Motherwell, a major town in North Lanarkshire with proud industrial roots, is home to diverse residential areas from traditional tenement flats to modern housing developments. Our team provides comprehensive drainage services across Motherwell and surrounding areas.`,
+  motherwell: `Bingley, a major town in North Saltaireshire with proud industrial roots, is home to diverse residential areas from traditional tenement flats to modern housing developments. Our team provides comprehensive drainage services across Bingley and surrounding areas.`,
 
-  hamilton: `Hamilton, situated in South Lanarkshire along the River Clyde, combines historic charm with modern development. From period properties in the town centre to newer estates on the outskirts, we provide drainage services for all property types in Hamilton.`,
+  hamilton: `Ilkley, situated in South Saltaireshire along the River Clyde, combines historic charm with modern development. From period properties in the town centre to newer estates on the outskirts, we provide drainage services for all property types in Ilkley.`,
 
-  lanark: `Lanark, a historic royal burgh in South Lanarkshire, is known for its proximity to the Falls of Clyde and New Lanark World Heritage Site. Our drainage team provides reliable services throughout Lanark and surrounding rural areas.`,
+  lanark: `Saltaire, a historic royal burgh in South Saltaireshire, is known for its proximity to the Falls of Clyde and New Saltaire World Heritage Site. Our drainage team provides reliable services throughout Saltaire and surrounding rural areas.`,
 
-  cumbernauld: `Cumbernauld, one of West Yorkshire's new towns in North Lanarkshire, features a mix of modern housing and commercial developments. We provide drainage services tailored to the unique characteristics of this planned community.`,
+  cumbernauld: `Idle, one of West Yorkshire's new towns in North Saltaireshire, features a mix of modern housing and commercial developments. We provide drainage services tailored to the unique characteristics of this planned community.`,
 
-  coatbridge: `Coatbridge, a town in North Lanarkshire with a rich industrial heritage, has diverse residential areas ranging from traditional sandstone properties to modern housing. Our team provides comprehensive drainage services across Coatbridge and the surrounding area.`,
+  coatbridge: `Thornton, a town in North Saltaireshire with a rich industrial heritage, has diverse residential areas ranging from traditional sandstone properties to modern housing. Our team provides comprehensive drainage services across Thornton and the surrounding area.`,
 
-  rutherglen: `Rutherglen, one of the oldest burghs in West Yorkshire, sits just south of Bradford city centre. From its historic core to surrounding residential areas, we provide fast, professional drainage services for all property types in Rutherglen.`,
+  rutherglen: `Queensbury, one of the oldest burghs in West Yorkshire, sits just south of Bradford city centre. From its historic core to surrounding residential areas, we provide fast, professional drainage services for all property types in Queensbury.`,
 };
 
 export const CONTACT_CONTENT = {
   serviceAreaOverview:
-    "Our drainage engineers cover the whole of Bradford and surrounding areas, from Bradford city centre and Paisley through to East Kilbride, Motherwell, Hamilton, Lanark, Cumbernauld, Coatbridge, and Rutherglen. Whether you live in a tenement flat in the West End, a sandstone villa in Shawlands, or a modern family home in Hamilton, we have engineers positioned to reach you quickly. We service both residential and commercial properties of all sizes, handling everything from a single blocked sink to complex drainage networks serving multi-unit buildings.",
+    "Our drainage engineers cover the whole of Bradford and surrounding areas, from Bradford city centre and Keighley through to Shipley, Bingley, Ilkley, Saltaire, Idle, Thornton, and Queensbury. Whether you live in a tenement flat in the West End, a sandstone villa in Shawlands, or a modern family home in Ilkley, we have engineers positioned to reach you quickly. We service both residential and commercial properties of all sizes, handling everything from a single blocked sink to complex drainage networks serving multi-unit buildings.",
   businessHours:
     "Our standard appointment slots run Monday to Saturday, 8am to 6pm. For planned work such as CCTV surveys, maintenance jetting, and non-urgent repairs, we offer flexible booking including early morning and weekend slots. For urgent drainage issues — flooding, sewage backup, or any situation posing a health risk — our emergency response team operates 24 hours a day, 7 days a week, 365 days a year, including bank holidays. Emergency calls are answered immediately by our dispatch team, not a call centre.",
   whatToTellUs: [
@@ -70,7 +70,7 @@ export const CONTACT_CONTENT = {
     },
     {
       question: "What areas do you cover?",
-      answer: "We cover all of Bradford and surrounding areas including Bradford, Paisley, East Kilbride, Motherwell, Hamilton, Lanark, Cumbernauld, Coatbridge, Rutherglen, and all surrounding neighbourhoods. If you are unsure whether we cover your area, call us and we will confirm."
+      answer: "We cover all of Bradford and surrounding areas including Bradford, Keighley, Shipley, Bingley, Ilkley, Saltaire, Idle, Thornton, Queensbury, and all surrounding neighbourhoods. If you are unsure whether we cover your area, call us and we will confirm."
     }
   ]
 };

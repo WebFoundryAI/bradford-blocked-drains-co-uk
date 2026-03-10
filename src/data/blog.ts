@@ -432,7 +432,7 @@ While DIY drain rods might seem cheaper initially, consider:
 
 If you suspect pipe damage is causing recurring issues, a [CCTV drain survey](/services/cctv-drain-surveys/) can confirm whether [drain repairs](/services/drain-repairs/) are needed before committing to more extensive work.
 
-For reliable [drain clearing across Bradford](/locations/bradford/drain-jetting/), call ${BRAND.brandName} on ${BRAND.phoneFormatted} or [request a quote online](/contact/). We also cover [Paisley](/locations/paisley/), [East Kilbride](/locations/east-kilbride/), and [Motherwell](/locations/motherwell/).`,
+For reliable [drain clearing across Bradford](/locations/bradford/drain-jetting/), call ${BRAND.brandName} on ${BRAND.phoneFormatted} or [request a quote online](/contact/). We also cover [Keighley](/locations/keighley/), [Shipley](/locations/shipley/), and [Bingley](/locations/bingley/).`,
     author: "Bradford",
     publishDate: "2025-12-20",
     category: "Drain Services",

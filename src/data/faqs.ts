@@ -130,7 +130,7 @@ export const PAGE_FAQS: FAQ[] = [
   },
   {
     question: "What locations do you cover?",
-    answer: 'We provide drainage services throughout <a href="/locations/bradford/" class="text-primary hover:underline">Bradford</a> and the Central West Yorkshire, including <a href="/locations/paisley/" class="text-primary hover:underline">Paisley</a>, <a href="/locations/east-kilbride/" class="text-primary hover:underline">East Kilbride</a>, <a href="/locations/motherwell/" class="text-primary hover:underline">Motherwell</a>, Hamilton, Lanark, Cumbernauld, Coatbridge, and Rutherglen. See <a href="/locations/" class="text-primary hover:underline">all locations we cover</a>.'
+    answer: 'We provide drainage services throughout <a href="/locations/bradford/" class="text-primary hover:underline">Bradford</a> and the Central West Yorkshire, including <a href="/locations/keighley/" class="text-primary hover:underline">Keighley</a>, <a href="/locations/shipley/" class="text-primary hover:underline">Shipley</a>, <a href="/locations/bingley/" class="text-primary hover:underline">Bingley</a>, Ilkley, Saltaire, Idle, Thornton, and Queensbury. See <a href="/locations/" class="text-primary hover:underline">all locations we cover</a>.'
   },
   {
     question: "What payment methods do you accept?",

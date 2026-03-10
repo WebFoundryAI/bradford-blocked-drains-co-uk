@@ -86,10 +86,10 @@ describe('Locations Data', () => {
       expect(loc!.name).toBe('Bradford');
     });
 
-    it('returns correct location for "east-kilbride"', () => {
+    it('returns correct location for "shipley"', () => {
       const loc = getLocationBySlug('east-kilbride');
       expect(loc).toBeDefined();
-      expect(loc!.name).toBe('East Kilbride');
+      expect(loc!.name).toBe('Shipley');
     });
 
     it('returns undefined for non-existent slug', () => {

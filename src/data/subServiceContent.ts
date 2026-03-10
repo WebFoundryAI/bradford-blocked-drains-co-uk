@@ -114,7 +114,7 @@ export const SUB_SERVICE_CONTENT: Record<string, SubServiceContent> = {
     relatedLinks: [
       { text: "Blocked drains services", href: "/services/blocked-drains/" },
       { text: "CCTV drain surveys", href: "/services/cctv-drain-surveys/" },
-      { text: "Drain unblocking in East Kilbride", href: "/locations/east-kilbride/drain-unblocking/" }
+      { text: "Drain unblocking in Shipley", href: "/locations/shipley/drain-unblocking/" }
     ]
   },
 
