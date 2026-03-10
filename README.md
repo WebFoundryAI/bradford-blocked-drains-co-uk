@@ -23,8 +23,8 @@ This template is **not multi-tenant**. It is designed for a single brand deploym
 ### Core Features
 
 - **Multi-location system** - Support for multiple service areas with individual pages
-- **Service-in-location pages** - Core SEO pages (e.g., "Blocked Drains in Edinburgh")
-- **Sub-service pages** - Granular service pages (e.g., "Blocked Toilet in Edinburgh")
+- **Service-in-location pages** - Core SEO pages (e.g., "Blocked Drains in Bradford")
+- **Sub-service pages** - Granular service pages (e.g., "Blocked Toilet in Bradford")
 - **Static Google-style maps** - Location maps with coverage areas
 - **Lead capture forms** - Contact forms for lead generation
 - **Full JSON-LD schema** - Structured data for rich search results
@@ -59,12 +59,12 @@ All branding is centralised in configuration files. To rebrand for a new client:
 export const BRAND: BrandConfig = {
   brandName: "Your Drain Company",
   domain: "yourdraincompany.co.uk",
-  primaryLocation: "Edinburgh",
-  serviceAreaLabel: "Edinburgh and surrounding areas",
-  phone: "0161 000 0000",
+  primaryLocation: "Bradford",
+  serviceAreaLabel: "Bradford and surrounding areas",
+  phone: "01274 834100",
   email: "info@yourdraincompany.co.uk",
   addressLine1: "123 High Street",
-  addressLine2: "Edinburgh",
+  addressLine2: "Bradford",
   postcode: "M1 1AA",
   companyNumber: "12345678",
   primaryColour: "#005BBB",
@@ -96,17 +96,17 @@ Update the primary location and surrounding areas:
 
 ```typescript
 export const PRIMARY_LOCATION: LocationConfig = {
-  slug: "edinburgh",
-  name: "Edinburgh",
-  countyOrRegion: "Edinburgh and the Lothians",
-  latitude: 53.4808,
-  longitude: -2.2426,
+  slug: "bradford",
+  name: "Bradford",
+  countyOrRegion: "West Yorkshire",
+  latitude: 53.7960,
+  longitude: -1.7594,
 };
 
 export const LOCATIONS: LocationConfig[] = [
   PRIMARY_LOCATION,
-  { slug: "salford", name: "Leith", ... },
-  { slug: "stockport", name: "Musselburgh", ... },
+  { slug: "shipley", name: "Shipley", ... },
+  { slug: "keighley", name: "Keighley", ... },
   // Add more areas
 ];
 ```
@@ -259,7 +259,7 @@ This repository includes a Cloudflare Worker that internally rewrites requests t
 
    [env.production]
    routes = [
-     { pattern = "edinburghdrainunblocker.co.uk/*", zone_id = "your-zone-id" }
+     { pattern = "bradfordblockeddrains.co.uk/*", zone_id = "your-zone-id" }
    ]
    ```
 
@@ -290,14 +290,14 @@ Test that the worker is functioning:
 
 ```bash
 # Should return 200 (no redirect)
-curl -I https://edinburghdrainunblocker.co.uk/services
+curl -I https://bradfordblockeddrains.co.uk/services
 
 # Should also return 200 (canonical URL already has /)
-curl -I https://edinburghdrainunblocker.co.uk/services/
+curl -I https://bradfordblockeddrains.co.uk/services/
 
 # Should return 200 for all valid routes
-curl -I https://edinburghdrainunblocker.co.uk/locations/edinburgh
-curl -I https://edinburghdrainunblocker.co.uk/blog
+curl -I https://bradfordblockeddrains.co.uk/locations/bradford
+curl -I https://bradfordblockeddrains.co.uk/blog
 ```
 
 ---
