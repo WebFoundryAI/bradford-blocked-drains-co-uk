@@ -5,13 +5,13 @@ workers_dev = false
 
 [env.production]
 routes = [
-  { pattern = "bradfordblockeddrains.co.uk/*", zone_id = "" }
+  { pattern = "bradfordblockeddrains.co.uk/*", zone_id = "7ab1b3cb2f4d9b6c1de713742440b31b" }
 ]
 
 [env.development]
 vars = { ENVIRONMENT = "development" }
 routes = [
-  { pattern = "bradfordblockeddrains.co.uk/*", zone_id = "" }
+  { pattern = "bradfordblockeddrains.co.uk/*", zone_id = "7ab1b3cb2f4d9b6c1de713742440b31b" }
 ]
 
 compatibility_date = "2024-12-20"
