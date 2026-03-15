@@ -14,7 +14,9 @@ export const BRAND = {
 
   // Per-site tracking & verification — update these when cloning the template
   ga4Id: "",
-  gscVerification: "",
+  gscVerification: "google961cee0b68e77cd7",
 
-  socialProfiles: [] as string[]
+  socialProfiles: [
+    "https://www.instagram.com/bradfordblockeddrains"
+  ]
 };
