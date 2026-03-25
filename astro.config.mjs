@@ -9,6 +9,7 @@ export default defineConfig({
     sitemap(),
   ],
   output: 'static',
+  compressHTML: true,
   build: {
     format: 'directory',
   },
