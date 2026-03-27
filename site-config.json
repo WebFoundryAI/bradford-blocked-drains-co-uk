@@ -1,0 +1,14 @@
+{
+  "site_name": "Bradford Plumber",
+  "city": "Bradford",
+  "region": "West Yorkshire",
+  "country": "England",
+  "tier": 1,
+  "domain": "bradford-blocked-drains.co.uk",
+  "layout_variant": "hero-cta",
+  "theme_variant": "trust-blue",
+  "status": "active",
+  "github_repo": "https://github.com/WebFoundryAI/bradford-blocked-drains-co-uk.git",
+  "source_folder": "rank-to-rent-sites/bradford-blocked-drains-co-uk",
+  "notes": "Tier 1 site. Migrated from existing rank-to-rent-sites folder."
+}
